@@ -10,6 +10,13 @@ class WorkExp extends StatefulWidget {
 class _WorkExpState extends State<WorkExp> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    double screenWidth = MediaQuery.sizeOf(context).width;
+    return Container(
+      width: screenWidth < 700 ? screenWidth * 0.9 : screenWidth * 0.3,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(10),
+      ),
+    );
   }
 }
