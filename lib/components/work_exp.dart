@@ -10,10 +10,6 @@ class WorkExp extends StatefulWidget {
 class _WorkExpState extends State<WorkExp> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [Text('data')],
-      ),
-    );
+    return const Placeholder();
   }
 }

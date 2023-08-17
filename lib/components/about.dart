@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
-import '../widgets/network_about.dart';
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -21,31 +18,10 @@ class _AboutState extends State<About> {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(children: [
-        SizedBox(
-            width: 150,
-            height: 150,
-            child: Image.asset(
-              'assets/images/about.jpg',
-              fit: BoxFit.cover,
-            )),
-        const Text('Yakhshiboyev Olimjon', textAlign: TextAlign.center, style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w600)),
-        const Text('I am a developer and I am looking for dev roles!', textAlign: TextAlign.center),
-        const Chip(label: Text('Flutter'), avatar: Icon(Icons.code)),
-        const Divider(),
-        const SizedBox(
-          child: Networks(
-            icon: FontAwesomeIcons.githubAlt,
-            networkName: 'Github',
-            userName: 'olimjon_sn',
-          ),
+        Image.asset(
+          'assets/images/about.jpg',
+          height: 156.0,
         ),
-        const SizedBox(
-          child: Networks(
-            icon: FontAwesomeIcons.linkedinIn,
-            networkName: 'LinkedIn',
-            userName: 'Olimjon Yaxshiboyev',
-          ),
-        )
       ]),
     );
   }
