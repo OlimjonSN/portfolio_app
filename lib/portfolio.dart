@@ -25,7 +25,7 @@ class _PortfolioState extends State<Portfolio> {
   Widget build(BuildContext context) {
     isMobile = MediaQuery.of(context).size.width > 700 ? false : true;
     return Scaffold(
-
+        backgroundColor: Colors.purple.shade50,
         //? App Bar
         appBar: AppBar(
           title: const Text('Olimjon Yakhshiboyev'),
@@ -38,6 +38,7 @@ class _PortfolioState extends State<Portfolio> {
           child: Column(
             children: [
               Wrap(
+                alignment: WrapAlignment.center,
                 children: [About(), WorkExp()],
               )
             ],
