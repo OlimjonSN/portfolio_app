@@ -23,7 +23,7 @@ class _WorkExpState extends State<WorkExp> {
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Text('Work Experience', textAlign: TextAlign.center, style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w600)),
+        const Text('Work Experience', textAlign: TextAlign.center, style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w600)),
         Timeline.tileBuilder(
             shrinkWrap: true,
             builder: TimelineTileBuilder.fromStyle(
@@ -35,7 +35,7 @@ class _WorkExpState extends State<WorkExp> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(Data.workExp[index]['company']!, style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w600)),
+                        Text(Data.workExp[index]['company']!, style: const TextStyle(fontSize: 15.0, fontWeight: FontWeight.w600)),
                         Text(Data.workExp[index]['position']!),
                         Text(Data.workExp[index]['duration']!),
                       ],
